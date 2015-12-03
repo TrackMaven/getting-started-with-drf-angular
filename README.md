@@ -1,0 +1,7 @@
+This is the supplementary repository for the TrackMaven "Getting Started with Django REST Framework (DRF) and AngularJS" blog series.
+
+The conclusion of each blog part can be found as separate branch within this repository matching the name of the part.
+
+Blog Series Links:
+    [Part 1 - Introduction, project setup, and folder structure modification](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-1/)
+
