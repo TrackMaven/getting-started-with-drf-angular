@@ -27,15 +27,17 @@ class Migration(migrations.Migration):
             name='Employee',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('number', models.CharField(max_length=20)),
                 ('first_name', models.CharField(max_length=100)),
                 ('last_name', models.CharField(max_length=100)),
-                ('hired_date', models.DateTimeField()),
+                ('hired_date', models.DateTimeField(default=django.utils.timezone.now)),
             ],
         ),
         migrations.CreateModel(
             name='Store',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('number', models.CharField(max_length=20)),
                 ('address', models.CharField(max_length=1000)),
                 ('opening_date', models.DateTimeField(default=django.utils.timezone.now)),
                 ('business_hours_start', models.IntegerField(default=8, validators=[django.core.validators.MinValueValidator(0), django.core.validators.MaxValueValidator(23)])),

@@ -15,6 +15,7 @@ class Chain(models.Model):
 class Store(models.Model):
     """ Store location model.  Foreign key to Chain."""
     chain = models.ForeignKey(Chain)
+    number = models.CharField(max_length=20)
     address = models.CharField(max_length=1000)
     opening_date = models.DateTimeField(default=timezone.now)
 
@@ -38,6 +39,7 @@ class Store(models.Model):
 class Employee(models.Model):
     """ Location employee model.  Foreign key to Store."""
     store = models.ForeignKey(Store)
+    number = models.CharField(max_length=20)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    hired_date = models.DateTimeField()
+    hired_date = models.DateTimeField(default=timezone.now)
