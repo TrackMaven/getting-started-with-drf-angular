@@ -1,2 +1,4 @@
 *.py[cod]
 db.*
+node_modules
+bower_components

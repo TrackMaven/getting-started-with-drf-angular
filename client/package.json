@@ -1,0 +1,16 @@
+{
+  "name": "drf-sample-client",
+  "version": "0.0.1",
+  "description": "A sample Angular application serving a Django backend as a separate service",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TrackMaven/getting-started-with-drf-angular.git"
+  },
+  "author": "Tim Butler",
+  "homepage": "https://github.com/TrackMaven/getting-started-with-drf-angular/blob/master/README.md",
+  "dependencies": {
+    "express": "^4.13.4",
+    "bower": "1.7.9"
+  }
+}
