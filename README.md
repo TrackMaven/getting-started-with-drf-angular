@@ -7,3 +7,5 @@ Blog Series Links:
 [Part 1 - Introduction, project setup, and folder structure modification](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-1/)
 
 [Part 2 - Adding a new module, defining database models, migration, and the Django ORM](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-2/)
+
+[Part 3 - Serializers, views, and API routes](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-3/)
