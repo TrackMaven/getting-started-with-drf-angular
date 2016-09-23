@@ -1,5 +1,4 @@
-angular
-    .module('retailApiService', [])
+retail
     .factory('chainFactory', ['$http', function($http) {
         return {
             get : function() {
