@@ -2,4 +2,7 @@
     <div>
         {{ message }}
     </div>
+    <div>
+        {{ chains }}
+    </div>
 </div>
