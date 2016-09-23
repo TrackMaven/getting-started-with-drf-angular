@@ -3,5 +3,5 @@
 angular
     .module('SampleApplication', [
         'appRoutes',
-        'retail'
+        'retailCtrl'
     ]);
