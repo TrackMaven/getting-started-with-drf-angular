@@ -1,11 +1,11 @@
 angular
-    .module('retail', [])
-    .factory('ChainFactory', ['$http', function($http) {
+    .module('retailApiService', [])
+    .factory('chainFactory', ['$http', function($http) {
         return {
             get : function() {
                 return $http({
                     method: 'GET',
-                    url: 'localhost:8000/registry-items/'
+                    url: 'http://localhost:8000/chains/'
                 })
             }
         }

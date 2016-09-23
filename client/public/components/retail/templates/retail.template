@@ -2,7 +2,21 @@
     <div>
         {{ message }}
     </div>
-    <div>
-        {{ chains }}
+    <div ng-repeat="chain in chains">
+        <div>
+            {{ chain.name }}
+        </div>
+        <div>
+            {{ chain.description }}
+        </div>
+        <div>
+            {{ chain.slogan }}
+        </div>
+        <div>
+            {{ chain.founded_date }}
+        </div>
+        <div>
+            {{ chain.website }}
+        </div>
     </div>
 </div>
