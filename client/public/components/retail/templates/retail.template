@@ -1,22 +1,21 @@
 <div ng-controller="RetailController">
-    <div>
-        {{ message }}
-    </div>
-    <div ng-repeat="chain in chains">
-        <div>
-            {{ chain.name }}
-        </div>
-        <div>
-            {{ chain.description }}
-        </div>
-        <div>
-            {{ chain.slogan }}
-        </div>
-        <div>
-            {{ chain.founded_date }}
-        </div>
-        <div>
-            {{ chain.website }}
-        </div>
-    </div>
+    <uib-tabset active="active">
+        <uib-tab index="0" heading="Chains">
+            <div ng-repeat="chain in chains">
+                {{ chain }}
+            </div>
+        </uib-tab>
+
+        <uib-tab index="1" heading="Stores">
+            <div ng-repeat="store in stores">
+                {{ store }}
+            </div>
+        </uib-tab>
+
+        <uib-tab index="2" heading="Employees">
+            <div ng-repeat="employee in employees">
+                {{ employee }}
+            </div>
+        </uib-tab>
+    </uib-tabset>
 </div>
