@@ -1,14 +1,12 @@
 retail
-    .controller('RetailController', function($scope, chainFactory, storeFactory, employeeFactory) {
-        chainFactory.get().then(function(result) {
-            $scope.chains = result.data
+    .controller('RetailController', function($scope, Chain, Store, Employee) {
+        Chain.query().$promise.then(function(data) {
+            $scope.chains = data;
         });
-
-        storeFactory.get().then(function(result) {
-            $scope.stores = result.data
+        Store.query().$promise.then(function(data) {
+            $scope.stores = data;
         });
-
-        employeeFactory.get().then(function(result) {
-            $scope.employees = result.data
+        Employee.query().$promise.then(function(data) {
+            $scope.employees = data;
         });
 });
