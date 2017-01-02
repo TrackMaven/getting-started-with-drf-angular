@@ -1,48 +1,40 @@
 <div ng-controller="RetailController">
-    <uib-tabset active="active">
-        Chains
-        <uib-tab index="0" heading="Chains">
-            <div ng-repeat="chain in chains">
-                <div style="margin-left: 20px;">
-                    name: {{ chain.name }} <br/>
-                    description: {{ chain.description }} <br/>
-                    slogan: {{ chain.slogan }} <br/>
-                    founded_date: {{ chain.founded_date }} <br/>
-                    website: {{ chain.website }} <br/>
-                    <hr/>
-                </div>
-            </div>
-        </uib-tab>
-        <br/>
+    Chains
+    <div ng-repeat="chain in chains">
+        <div style="margin-left: 20px;">
+            name: {{ chain.name }} <br/>
+            description: {{ chain.description }} <br/>
+            slogan: {{ chain.slogan }} <br/>
+            founded_date: {{ chain.founded_date }} <br/>
+            website: {{ chain.website }} <br/>
+            <hr/>
+        </div>
+    </div>
+    <br/>
 
-        Stores
-        <uib-tab index="1" heading="Stores">
-            <div ng-repeat="store in stores">
-                <div style="margin-left: 20px;">
-                    chain: {{ store.chain }} <br/>
-                    number: {{ store.number }} <br/>
-                    address: {{ store.address }} <br/>
-                    opening_date: {{ store.opening_date }} <br/>
-                    business_hours_start: {{ store.business_hours_start }} <br/>
-                    business_hours_end: {{ store.business_hours_end }} <br/>
-                    <hr/>
-                </div>
-            </div>
-        </uib-tab>
-        <br/>
+    Stores
+    <div ng-repeat="store in stores">
+        <div style="margin-left: 20px;">
+            chain: {{ store.chain }} <br/>
+            number: {{ store.number }} <br/>
+            address: {{ store.address }} <br/>
+            opening_date: {{ store.opening_date }} <br/>
+            business_hours_start: {{ store.business_hours_start }} <br/>
+            business_hours_end: {{ store.business_hours_end }} <br/>
+            <hr/>
+        </div>
+    </div>
+    <br/>
 
-        Employees
-        <uib-tab index="2" heading="Employees">
-            <div ng-repeat="employee in employees">
-                <div style="margin-left: 20px;">
-                    store: {{ employee.store }}  <br/>
-                    number: {{ employee.number }}  <br/>
-                    first_name: {{ employee.first_name }}  <br/>
-                    last_name: {{ employee.last_name }}  <br/>
-                    hired_date: {{ employee.hired_date }}  <br/>
-                </div>
-            </div>
-        </uib-tab>
-        <br/>
-    </uib-tabset>
+    Employees
+    <div ng-repeat="employee in employees">
+        <div style="margin-left: 20px;">
+            store: {{ employee.store }}  <br/>
+            number: {{ employee.number }}  <br/>
+            first_name: {{ employee.first_name }}  <br/>
+            last_name: {{ employee.last_name }}  <br/>
+            hired_date: {{ employee.hired_date }}  <br/>
+        </div>
+    </div>
+    <br/>
 </div>
