@@ -10,4 +10,6 @@ Blog Series Links:
 
 [Part 3 - Serializers, views, and API routes](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-3/)
 
-[Part 4 - Introduction to Angular and setting up the client](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-4/)
+[Part 4 - Client Project Setup](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-4/)
+
+[Part 5 - Angular Services and ngRepeat](http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-5/)
